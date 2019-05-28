@@ -25,7 +25,7 @@ var server = app.listen(8081, function () {
 
 //default route
 app.get('/', function(req, res){
-    res.send("Hello world");
+    res.send("DevOps Docker_Extended");
 });
 
  app.get('/api/employees', function(req,res){
