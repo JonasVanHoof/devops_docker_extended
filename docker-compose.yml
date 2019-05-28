@@ -1,8 +1,9 @@
 version: '3'
 services:
-  web:
-    build: ./web
-    ports:
-     - "8081:8081"
   db:
     build: ./database
+  web:
+    build: ./web
+    restart: always
+    ports:
+     - "8081:8081"

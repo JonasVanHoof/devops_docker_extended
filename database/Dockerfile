@@ -1,5 +1,5 @@
 # used base image
-FROM mysql
+FROM mysql:5
 
 WORKDIR /docker-entrypoint-initdb.d/
 # login for sql database

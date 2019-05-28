@@ -12,7 +12,7 @@ var db = mysql.createConnection({
     user: 'jonas',
     password: 'vanhoof',
     database: 'employees'
-});
+ });
 //connect to database
 db.connect();
 
@@ -28,8 +28,8 @@ app.get('/', function(req, res){
     res.send("Hello world");
 });
 
-app.get('/api/employees', function(req,res){
-    db.query('SELECT * FROM employees LIMIT 50', (err, result) => {
-        res.send(result);
-    });    
-});
+ app.get('/api/employees', function(req,res){
+     db.query('SELECT * FROM employees LIMIT 50', (err, result) => {
+         res.send(result);
+     });    
+ });
